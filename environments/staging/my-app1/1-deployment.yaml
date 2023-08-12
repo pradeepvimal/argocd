@@ -2,22 +2,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx
+  name: guestbook
   namespace: bar
   labels:
-    app: nginx
+    app: guestbook
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      app: guestbook
   template:
     metadata:
       labels:
-        app: nginx
+        app: guestbook
     spec:
       containers:
-        - name: nginx
+        - name: guestbook
           image: gcr.io/heptio-images/ks-guestbook-demo:0.2
           resources:
             requests:

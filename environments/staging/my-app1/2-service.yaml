@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx
+  name: guestbook
   namespace: bar
   labels:
-    app: nginx
+    app: guestbook
 spec:
   ports:
   - port: 81
@@ -12,4 +12,4 @@ spec:
     nodePort: 30007
   type: NodePort
   selector:
-    app: nginx
+    app: guestbook
