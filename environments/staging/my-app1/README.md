@@ -23,7 +23,9 @@ Exp: 
     nodePort: 30008
 
 service: **my-app2**
+
 kubectl port-forward -n foo service/nginx 8082:8082
 
 service: **my-app1**
+
 kubectl port-forward -n bar service/guestbook 8081:8081
