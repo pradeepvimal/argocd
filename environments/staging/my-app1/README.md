@@ -14,6 +14,7 @@ create Folder:
 How to do port forwarding for service:
 
 kubectl port-forward **-n namespace_name** **my-service** 8000:8080
+
 here: 8080 service port and 8000 local port on which service can expose outside cluster
 
 Exp: 
