@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: my-app-foo
+  name: my-app-bar
   namespace: argocd
   finalizers:     #this step argocd will delete the kubernetetes app first then delete from ardocd
     - resources-finalizer.argocd.argoproj.io 
