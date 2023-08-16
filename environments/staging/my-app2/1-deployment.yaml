@@ -2,23 +2,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx
+  name: spc
   namespace: foo
   labels:
-    app: nginx
+    app: spc
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      app: spc
   template:
     metadata:
       labels:
-        app: nginx
+        app: spc
     spec:
       containers:
         - name: nginx
-          image: vimalpradeep/pet-clenic:latest
+          image: vimalpradeep/spc:latest
           resources:
             requests:
               memory: "64Mi"
