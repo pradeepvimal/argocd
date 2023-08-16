@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx
+  name: spc
   namespace: foo
   labels:
-    app: nginx
+    app: spc
 spec:
   ports:
   - port: 8082
@@ -12,4 +12,4 @@ spec:
     nodePort: 30008
   type: NodePort
   selector:
-    app: nginx
+    app: spc
